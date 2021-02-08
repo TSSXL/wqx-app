@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/index",
+    "pages/solution/index",
+    "pages/contact/index",
+    "pages/cases/index",
+    "pages/solution/shop"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#949494",
+    "selectedColor": "#333333",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/home.png",
+        "selectedIconPath": "static/images/home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "iconPath": "static/images/a.png",
+        "selectedIconPath": "static/images/a_selectd.png",
+        "text": "关于我们"
+      },
+      {
+        "pagePath": "pages/solution/index",
+        "iconPath": "static/images/solution.png",
+        "selectedIconPath": "static/images/solution_selectd.png",
+        "text": "解决方案"
+      },
+      {
+        "pagePath": "pages/cases/index",
+        "iconPath": "static/images/cases.png",
+        "selectedIconPath": "static/images/cases_selected.png",
+        "text": "客户案例"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

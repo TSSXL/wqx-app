@@ -1,0 +1,459 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.container {
+  width: 100%;
+  position: relative;
+}
+.container .header {
+  width: 95%;
+  position: fixed;
+  left: 0;
+  padding: 15px 2.5%;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  z-index: 100;
+}
+.container .header .logo image {
+  width: 187rpx;
+  height: 60rpx;
+}
+.container .banner {
+  width: 100%;
+  position: relative;
+}
+.container .banner image {
+  width: 100%;
+  height: 673rpx;
+}
+.container .banner .text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.container .banner .text .t1 {
+  color: white;
+  font-size: 48rpx;
+  font-family: 'FZCYSK--GBK1-0';
+  letter-spacing: 15rpx;
+}
+.container .banner .text .t2 {
+  color: white;
+  font-size: 20rpx;
+  text-transform: uppercase;
+  margin: 20rpx 0;
+  font-family: 'FZCYSK--GBK1-0';
+}
+.container .service {
+  width: 95%;
+  margin: 60rpx auto;
+}
+.container .service .text {
+  width: 100%;
+}
+.container .service .text .t1 {
+  color: #222222;
+  font-size: 36rpx;
+  font-family: "SOURCEHANSANSCN-HEAVY";
+}
+.container .service .text .t2 {
+  color: #666666;
+  font-family: "SOURCEHANSANSCN-REGULAR";
+  font-size: 22rpx;
+  margin: 25rpx auto;
+}
+.container .service .allItems {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin: 60rpx auto;
+}
+.container .service .allItems .item {
+  width: 49%;
+  background-color: #272B3D;
+  text-align: center;
+  padding: 40rpx 0;
+}
+.container .service .allItems .item .pic {
+  width: 100rpx;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+.container .service .allItems .item .title {
+  color: white;
+  font-size: 24rpx;
+  margin: 10rpx auto;
+  font-family: "SOURCEHANSANSCN-REGULAR";
+}
+.container .service .allItems .item:nth-child(1) .pic image {
+  width: 78rpx;
+  height: 56rpx;
+  object-fit: contain;
+}
+.container .service .allItems .item:nth-child(2) .pic image {
+  width: 48rpx;
+  height: 84rpx;
+  object-fit: contain;
+}
+.container .service .allItems .item2 {
+  width: 32%;
+  background-color: #E5E5E5;
+  text-align: center;
+  padding: 40rpx 0;
+  margin-top: 15rpx;
+}
+.container .service .allItems .item2 .pic {
+  width: 100rpx;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+.container .service .allItems .item2 .pic image {
+  width: 80rpx;
+  height: 80rpx;
+  object-fit: contain;
+}
+.container .service .allItems .item2 .title {
+  font-size: 24rpx;
+  margin: 10rpx auto;
+  font-family: "SOURCEHANSANSCN-REGULAR";
+}
+.container .tech {
+  position: relative;
+  width: 100%;
+  background-color: #eeeeee;
+}
+.container .tech .bgPic {
+  width: 100%;
+}
+.container .tech .bgPic image {
+  width: 100%;
+}
+.container .tech .text {
+  width: 90%;
+  left: 5%;
+  top: 20%;
+  position: absolute;
+}
+.container .tech .text .t1 {
+  color: white;
+  font-size: 34rpx;
+  font-family: "SOURCEHANSANSCN-REGULAR";
+}
+.container .tech .text .t2 {
+  color: white;
+  font-size: 48rpx;
+  font-family: "FZCYSK--GBK1-0";
+  position: relative;
+  padding-bottom: 50rpx;
+  margin-top: 10rpx;
+}
+.container .tech .text .t2::after {
+  width: 81rpx;
+  height: 4rpx;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+.container .tech .text .t3 {
+  color: white;
+  font-size: 16rpx;
+  font-family: "SOURCEHANSANSCN-REGULAR";
+  margin-top: 180rpx;
+}
+.container .chose {
+  background-color: #eeeeee;
+  width: 100%;
+  padding: 60rpx 0;
+}
+.container .chose .title {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .chose .title .t1 {
+  color: #535353;
+  font-size: 48rpx;
+  font-family: "FZCYSK--GBK1-0";
+}
+.container .chose .title .t2 {
+  color: #888888;
+  font-size: 24rpx;
+  font-family: "FZCYSK--GBK1-0";
+  margin: 20rpx auto;
+}
+.container .chose .allItems {
+  width: 95%;
+  margin: 60rpx auto;
+}
+.container .chose .allItems .item {
+  width: 90%;
+  padding: 80rpx 5%;
+  background-color: white;
+  position: relative;
+  margin-bottom: 30rpx;
+}
+.container .chose .allItems .item .st {
+  position: absolute;
+  right: 5%;
+  top: 30rpx;
+  color: #E9E9E9;
+  font-size: 48rpx;
+  font-family: "FZCYSK--GBK1-0";
+}
+.container .chose .allItems .item .t1 {
+  color: #333333;
+  font-size: 28rpx;
+  font-family: "SOURCEHANSANSCN-REGULAR";
+}
+.container .chose .allItems .item .t2 {
+  color: #666666;
+  font-size: 20rpx;
+  font-family: "SOURCEHANSANSCN-REGULAR";
+  margin-top: 10rpx;
+}
+.container .fuwu {
+  width: 100%;
+  position: relative;
+}
+.container .fuwu .bgPic {
+  width: 100%;
+}
+.container .fuwu .bgPic image {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  height: 884rpx;
+}
+.container .fuwu .content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 15%;
+}
+.container .fuwu .content .title {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .fuwu .content .title .t1 {
+  color: white;
+  font-size: 48rpx;
+  font-family: "FZCYSK--GBK1-0";
+}
+.container .fuwu .content .title .t2 {
+  color: white;
+  font-size: 24rpx;
+  font-family: "FZCYSK--GBK1-0";
+  margin: 30rpx 0;
+}
+.container .fuwu .content .allItems {
+  width: 95%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  position: relative;
+  margin: 60rpx auto;
+  margin-top: 160rpx;
+}
+.container .fuwu .content .allItems .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  z-index: 10;
+}
+.container .fuwu .content .allItems .item .pic {
+  width: 76rpx;
+  height: 76rpx;
+  border-radius: 50%;
+  background-color: #8C111B;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+.container .fuwu .content .allItems .item .pic image {
+  max-width: 40rpx;
+  max-height: 40rpx;
+  object-fit: contain;
+}
+.container .fuwu .content .allItems .item .text {
+  font-family: 'MicrosoftYaHei';
+  position: relative;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.container .fuwu .content .allItems .item .text .circle {
+  width: 13rpx;
+  height: 13rpx;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  margin: 30rpx 0;
+}
+.container .fuwu .content .allItems .item .text .circle::before, .container .fuwu .content .allItems .item .text .circle::after {
+  content: '';
+  display: inline-block;
+  width: 66rpx;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+}
+.container .fuwu .content .allItems .item .text .circle::before {
+  content: '';
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.container .fuwu .content .allItems .item .text .circle::after {
+  content: '';
+  display: inline-block;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.container .fuwu .content .allItems .item .text .circle view {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+.container .fuwu .content .allItems .item .text .t {
+  opacity: .54;
+  color: white;
+  font-family: 'MicrosoftYaHei';
+  font-size: 22rpx;
+}
+
